@@ -2,18 +2,19 @@
   "name": "tweety",
   "main": "scripts/main.js",
   "dependencies": {
-    "twitter": "*",
-    "request": "*",
-    "react": "*",
     "lodash": "*",
-    "react-mini-router": "*"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-mini-router": "*",
+    "request": "*",
+    "twitter": "*"
   },
   "devDependencies": {
     "browserify": "^6.2.0",
     "envify": "^3.0.0",
     "reactify": "^0.15.2",
     "uglify-js": "~2.4.15",
-    "watchify": "^2.1.1"
+    "watchify": "^2.6.2"
   },
   "scripts": {
     "start": "watchify -o scripts/bundle.js -v -d .",
@@ -21,8 +22,26 @@
   },
   "browserify": {
     "transform": [
-      ["reactify", {"es6": true}],
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ],
       "envify"
     ]
-  }
+  },
+  "description": "",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxywu/tweety.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sxywu/tweety/issues"
+  },
+  "homepage": "https://github.com/sxywu/tweety#readme"
 }
